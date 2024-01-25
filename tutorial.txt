@@ -1,0 +1,12 @@
+entrar na venv
+cd path_do_projeto
+source venv/bin/activate (iniciar venv unix)
+venv/Scripts/activate.bat (iniciar venv Windows)
+
+configurar django
+pip install django
+django-admin startproject nome_do_projeto_de_vcs
+
+executar projeto
+cd nome_do_projeto_de_vcs
+python manage.py runserver
