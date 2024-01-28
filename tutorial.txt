@@ -10,3 +10,16 @@ django-admin startproject nome_do_projeto_de_vcs
 executar projeto
 cd nome_do_projeto_de_vcs
 python manage.py runserver
+
+python manage.py startapp nome_do_app_de_vcs
+
+Configurar arquivos estaticos
+pip install dj_static
+colocar o cling e mediacling no wsgi e asgi
+criar diretorios de arquivos statics no settings.py
+python manage.py collectstatic (para coletar os arquivos statics)
+
+Configurar o Django Admin
+python manage.py makemigrations (prepara as migrações do banco)
+python manage.py migrate (aplica as migrações no banco)
+python manage.py createsuperuser (cria um superusário)
