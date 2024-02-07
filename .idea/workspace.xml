@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cf30402-458a-4245-8848-7917a366fff1" name="Changes" comment="Configuração do django;&#10;criação do app;&#10;configuração dos arquivos statics;&#10;configuração do Templates;&#10;configuração do banco de dados&#10;configuração do superusario&#10;criou uma rota url&#10;criou base.html&#10;criou menu e footer&#10;criou home">
-      <change afterPath="$PROJECT_DIR$/consultorio/static/css/style.css" afterDir="false" />
+    <list default="true" id="7cf30402-458a-4245-8848-7917a366fff1" name="Changes" comment="Aula CSS">
+      <change afterPath="$PROJECT_DIR$/consultorio/static/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consultorio/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consultorio/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consultorio/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/templates/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
         <option value="HTML File" />
         <option value="Python Script" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -69,6 +71,8 @@
       <workItem from="1706536277656" duration="238000" />
       <workItem from="1706739052624" duration="1813000" />
       <workItem from="1706748810263" duration="244000" />
+      <workItem from="1706751203828" duration="22000" />
+      <workItem from="1707343113361" duration="3634000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1706191830321</created>
@@ -84,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706401887916</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Aula CSS">
+      <created>1706751217459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706751217459</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="Configuração do django;&#10;criação do app;&#10;configuração dos arquivos statics;&#10;configuração do Templates;&#10;configuração do banco de dados&#10;configuração do superusario&#10;criou uma rota url&#10;criou base.html&#10;criou menu e footer&#10;criou home" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuração do django;&#10;criação do app;&#10;configuração dos arquivos statics;&#10;configuração do Templates;&#10;configuração do banco de dados&#10;configuração do superusario&#10;criou uma rota url&#10;criou base.html&#10;criou menu e footer&#10;criou home" />
+    <MESSAGE value="Aula CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula CSS" />
   </component>
 </project>
