@@ -1,0 +1,110 @@
+{% extends 'menu.html' %}
+{% load static %}
+{% block title %}Listar Medico{% endblock %}
+{% block body %}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h5>Nome</h5>
+        </div>
+        <div class="col">
+            <h5>CRM</h5>
+        </div>
+        <div class="col">
+            <h5>UF CRM</h5>
+        </div>
+        <div class="col">
+            <h5>Especialidade</h5>
+        </div>
+        <div class="col">
+            <h5>RG</h5>
+        </div>
+        <div class="col">
+            <h5>Orgão Expedidor</h5>
+        </div>
+        <div class="col">
+            <h5>CPF</h5>
+        </div>
+        <div class="col">
+            <h5>CEP</h5>
+        </div>
+        <div class="col">
+            <h5>Estado</h5>
+        </div>
+        <div class="col">
+            <h5>Bairro</h5>
+        </div>
+        <div class="col">
+            <h5>Endereco</h5>
+        </div>
+        <div class="col">
+            <h5>E-mail</h5>
+        </div>
+        <div class="col">
+            <h5>Telefone</h5>
+        </div>
+        <div class="col">
+            <h5>Celular</h5>
+        </div>
+        <div class="col">
+            <h5>Ações</h5>
+        </div>
+    </div>
+    {% for m in medicos %}
+    <div class="row">
+        <div class="col">
+            <h5>{{ m.nome }}</h5>
+        </div>
+
+        <div class="col">
+            <h5>{{ m.crm }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.ufcrm }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.especialidade }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.rg }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.orgExp }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.cpf }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.cep }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.estado }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.bairro }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.endereco }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.email }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.telefone }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ m.celular }}</h5>
+        </div>
+        <div class="col">
+            <a href="updatemedico/{{ m.id }}">
+                <img src="{% static 'img/edit.svg' %}" height="35px">
+            </a>
+            <a href="deletemedico/{{ m.id }}">
+                <img src="{% static 'img/remove.svg' %}" height="35px">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

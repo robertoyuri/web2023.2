@@ -16,7 +16,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{% url 'createpaciente' %}">Cadastrar</a></li>
-                        <li><a class="dropdown-item" href="#">Listar</a></li>
+                        <li><a class="dropdown-item" href="{% url 'readpaciente' %}">Listar</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -27,8 +27,8 @@
                         Médico
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{% url 'createdoctor' %}">Cadastrar</a></li>
-                        <li><a class="dropdown-item" href="#">Listar</a></li>
+                        <li><a class="dropdown-item" href="{% url 'createmedico' %}">Cadastrar</a></li>
+                        <li><a class="dropdown-item" href="{% url 'readmedico' %}">Listar</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -39,8 +39,8 @@
                         Consulta
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Cadastrar</a></li>
-                        <li><a class="dropdown-item" href="#">Listar</a></li>
+                        <li><a class="dropdown-item" href="{% url 'createconsulta' %}">Cadastrar</a></li>
+                        <li><a class="dropdown-item" href="{% url 'readconsulta' %}">Listar</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Visualizar Calendario</a></li>
                     </ul>

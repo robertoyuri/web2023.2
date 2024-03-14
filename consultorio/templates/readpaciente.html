@@ -1,0 +1,91 @@
+{% extends 'menu.html' %}
+{% load static %}
+{% block title %}Listar Paciente{% endblock %}
+{% block body %}
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h5>Nome</h5>
+    </div>
+    <div class="col">
+      <h5>RG</h5>
+    </div>
+    <div class="col">
+      <h5>Orgão Expedidor</h5>
+    </div>
+    <div class="col">
+      <h5>CPF</h5>
+    </div>
+    <div class="col">
+      <h5>CEP</h5>
+    </div>
+    <div class="col">
+      <h5>Estado</h5>
+    </div>
+    <div class="col">
+      <h5>Bairro</h5>
+    </div>
+    <div class="col">
+      <h5>Endereco</h5>
+    </div>
+    <div class="col">
+      <h5>E-mail</h5>
+    </div>
+    <div class="col">
+      <h5>Telefone</h5>
+    </div>
+    <div class="col">
+      <h5>Celular</h5>
+    </div>
+    <div class="col">
+      <h5>Ações</h5>
+    </div>
+  </div>
+  {% for p in pacientes %}
+  <div class="row">
+    <div class="col">
+      <h5>{{ p.nome }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.rg }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.orgExp }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.cpf }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.cep }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.estado }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.bairro }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.endereco }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.email }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.telefone }}</h5>
+    </div>
+    <div class="col">
+      <h5>{{ p.celular }}</h5>
+    </div>
+    <div class="col">
+      <a href="updatepaciente/{{ p.id }}">
+        <img src="{% static 'img/edit.svg' %}" height="35px">
+      </a>
+      <a href="deletepaciente/{{ p.id }}">
+        <img src="{% static 'img/remove.svg' %}" height="35px">
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'menu.html' %}
+{% load static %}
+{% block title %}Listar Medico{% endblock %}
+{% block body %}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h5>Paciente</h5>
+        </div>
+        <div class="col">
+            <h5>Medico</h5>
+        </div>
+        <div class="col">
+            <h5>Data</h5>
+        </div>
+        <div class="col">
+            <h5>Prontuario</h5>
+        </div>
+        <div class="col">
+            <h5>Ações</h5>
+        </div>
+    </div>
+    {% for c in consultas %}
+    <div class="row">
+        <div class="col">
+            <h5>{{ c.medico }}</h5>
+        </div>
+
+        <div class="col">
+            <h5>{{ c.paciente }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ c.datahora }}</h5>
+        </div>
+        <div class="col">
+            <h5>{{ c.prontuario }}</h5>
+        </div>
+        <div class="col">
+            <a href="updateconsulta/{{ c.id }}">
+                <img src="{% static 'img/edit.svg' %}" height="35px">
+            </a>
+            <a href="deleteconsulta/{{ c.id }}">
+                <img src="{% static 'img/remove.svg' %}" height="35px">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
