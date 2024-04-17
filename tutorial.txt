@@ -23,3 +23,7 @@ Configurar o Django Admin
 python manage.py makemigrations (prepara as migrações do banco)
 python manage.py migrate (aplica as migrações no banco)
 python manage.py createsuperuser (cria um superusário)
+
+Configuração Django rest Framework
+pip install djangorestframework
+add install apps rest_framework

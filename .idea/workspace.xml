@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cf30402-458a-4245-8848-7917a366fff1" name="Changes" comment="modelagem de dados">
-      <change afterPath="$PROJECT_DIR$/consultorio/app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consultorio/static/img/edit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consultorio/static/img/remove.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consultorio/templates/createconsulta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consultorio/templates/readconsulta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consultorio/templates/readmedico.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consultorio/templates/readpaciente.html" afterDir="false" />
+    <list default="true" id="7cf30402-458a-4245-8848-7917a366fff1" name="Changes" comment="CRUD de tabelas medico, paciente e consulta">
+      <change afterPath="$PROJECT_DIR$/consultorio/app/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consultorio/app/viewsets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consultorio/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consultorio/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consultorio/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consultorio/templates/createdoctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/templates/createmedico.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consultorio/templates/createpaciente.html" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/templates/createpaciente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consultorio/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consultorio/consultorio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/consultorio/consultorio/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +19,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -44,20 +36,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/robertoyuridasilvafranco/IdeaProjects/consultorio/consultorio/static/img",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/robertoyuridasilvafranco/IdeaProjects/consultorio/consultorio/static/img&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/consultorio/static/img" />
@@ -87,7 +79,9 @@
       <workItem from="1707396737814" duration="165000" />
       <workItem from="1709770304615" duration="2766000" />
       <workItem from="1710105983406" duration="211000" />
-      <workItem from="1710366044103" duration="6315000" />
+      <workItem from="1710366044103" duration="6969000" />
+      <workItem from="1713386814762" duration="378000" />
+      <workItem from="1713390649710" duration="1863000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1706191830321</created>
@@ -124,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709773697817</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CRUD de tabelas medico, paciente e consulta">
+      <created>1710374616547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710374616547</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +148,7 @@
     <MESSAGE value="Aula CSS" />
     <MESSAGE value="JS, Bootstrap" />
     <MESSAGE value="modelagem de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="modelagem de dados" />
+    <MESSAGE value="CRUD de tabelas medico, paciente e consulta" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD de tabelas medico, paciente e consulta" />
   </component>
 </project>
